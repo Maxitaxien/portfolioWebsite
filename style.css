@@ -1,5 +1,18 @@
 * {
     text-align: center;
+    font-fammily: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+h1, p {
+    text-align: center;
 }
 
 ul {
@@ -7,8 +20,69 @@ ul {
     list-style-type: disc;
 }
 
+.header {
+    background-color: darkcyan;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    width: 100%;
+}
 
-.container {
+.header-links {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.header-links a:hover {
+    color: darkblue;
+}
+
+.intro {
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.intro h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 700px;
+    margin: 10px auto;
+    padding-top: 20px;
+}
+
+.info {
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.info {
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.project-container {
     display: flex;
     flex-direction: row;
     margin: 12px;
@@ -17,11 +91,18 @@ ul {
     align-items: center;
 }
 
-.container div {
-    background: peachpuff;
-    border: 4px solid brown;
+.project-container div {
+    background: darkcyan;
+    border: 4px solid lightblue;
     height: 100px;
     width: 250px;
     margin: 16px;
-    /*flex: 1 1 auto;*/
+    transition: all 0.3s ease;
+    flex: 1 1 auto;
+}
+
+.contact {
+}
+
+.contact ul {
 }
